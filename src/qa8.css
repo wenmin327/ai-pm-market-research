@@ -1,0 +1,20 @@
+/* Wide desktop uses content-led Track sections; viewport height is intentionally irrelevant. */
+@media (min-width:1200px){
+  .tracks .trackIndex{min-height:0;padding-bottom:clamp(2.5rem,5vh,4.5rem)}
+  .tracks .observations{padding-top:1rem!important}
+  .tracks{
+    --track-item-title-family:Georgia,"Songti SC",serif;
+    --track-item-title-size:1.5rem;
+    --track-item-title-weight:400;
+    --track-item-title-line-height:normal;
+    --track-item-title-letter-spacing:normal;
+  }
+  .tracks .trackIndex h2,
+  .tracks .observations .observationItems h3{
+    font-family:var(--track-item-title-family);
+    font-size:var(--track-item-title-size);
+    font-weight:var(--track-item-title-weight);
+    line-height:var(--track-item-title-line-height);
+    letter-spacing:var(--track-item-title-letter-spacing);
+  }
+}
